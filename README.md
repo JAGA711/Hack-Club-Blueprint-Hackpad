@@ -52,7 +52,7 @@ Here’s the custom PCB design, also made in KiCad.
 It includes a ground plane, compact routing, and custom silkscreen + copper artwork.
 
 ### PCB Layout
-![PCB Design](images/pcb-design.png)
+![PCB Design](Images/pcb-design.png)
 
 ---
 
