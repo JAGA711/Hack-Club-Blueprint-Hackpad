@@ -1,0 +1,54 @@
+from kmk.kmk_keyboard import KMKKeyboard
+from kmk.keys import KC
+from kmk.modules.encoder import EncoderHandler
+from kmk.modules.oled import Oled, OledDisplayMode
+from kmk.extensions.media_keys import MediaKeys
+
+keyboard = KMKKeyboard()
+
+# Enable media keys
+keyboard.modules.append(MediaKeys())
+
+# --- ENCODER SETUP ---
+encoder = EncoderHandler()
+keyboard.modules.append(encoder)
+
+# Volume control
+encoder.pins = (
+    ("GP9", "GP8", "GP10"),  # A, B, Button
+)
+encoder.map = [
+    ((KC.VOLD, KC.VOLU, KC.MPLY),),  # CCW, CW, Press
+]
+# --- OLED SETUP ---
+oled = Oled(
+    width=128,
+    height=32,
+    rotation=0,
+    i2c_addr=0x3C,
+    mode=OledDisplayMode.TXT,
+)
+keyboard.modules.append(oled)
+
+# --- KEYMAP ---
+keyboard.keymap = [
+    [
+        KC.MNXT,   # W → Next track
+        KC.MPRV,   # S → Previous track
+        KC.LEFT,   # A → Rewind (simulate with arrow)
+        KC.RIGHT,  # D → Forward
+    ]
+]
+
+# --- OLED DISPLAY FUNCTION ---
+def oled_task():
+    oled.clear()
+    oled.write("Macropad 🎵\n")
+    oled.write("W: Next\n")
+    oled.write("S: Prev\n")
+    oled.write("Knob: Vol\n")
+
+keyboard.before_hid_send = oled_task
+
+if __name__ == '__main__':
+    keyboard.go()
