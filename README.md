@@ -34,7 +34,7 @@ The case is designed to be simple and clean, with the PCB sitting on internal st
 - 3D printed base
 - PCB sits close to the top for a low-profile look
 
-![Case](images/case.png)
+![Case](Images/case.png)
 
 ---
 
