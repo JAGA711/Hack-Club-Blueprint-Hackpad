@@ -1,0 +1,5 @@
+"Reference","Qty","Value","DNP","Exclude from BOM","Exclude from Board","Footprint","Datasheet"
+"J1","1","Conn_01x04_Pin","","","","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~"
+"SW4,SW5,SW6,SW7","4","SW_Push","","","","Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB","~"
+"SW8","1","RotaryEncoder_Switch","","","","Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm","~"
+"U2","1","MOUDLE-SEEEDUINO-XIAO","","","","footprints:XIAO-Generic-Hybrid-14P-2.54-21X17.8MM",""
