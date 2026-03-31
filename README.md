@@ -22,7 +22,7 @@ Designed as part of a Hack Club Hackpad project, it blends functionality with ae
 
 ## 📸 Final Build
 
-![Macropad](images/render.png)
+![Macropad](Images/render.png)
 
 ---
 
@@ -42,7 +42,7 @@ The case is designed to be simple and clean, with the PCB sitting on internal st
 
 Made in KiCad.
 
-![Schematic](images/schematic.png)
+![Schematic](Images/schematic.png)
 
 ---
 
@@ -65,10 +65,11 @@ I incorporated visual elements influenced by album art and themes, including ref
 This was a big focus of the project — turning the PCB into something not just functional, but also visually meaningful.
 
 ### Front
-![PCB Front](images/pcb-front.png)
+![PCB Front](Images/pcb-front.png)
 
 ### Back
-![PCB Back](images/pcb-back.png)
+![PCB Back](Images/pcb-back.png)
+
 ---
 
 ## ⚙️ Firmware Overview
